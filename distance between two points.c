@@ -2,7 +2,7 @@
 #include<math.h>
 int main()
 {
-    float x1,x2, y1,y2 ;
+    float x1,x2, y1,y2 , a , b ;
     float distance ;
 
     printf("enter the x1 point : ");
@@ -17,7 +17,9 @@ int main()
     printf("enter the y2 point : ");
     scanf("%f",&y2);
 
-    distance = sqrt ((x1-x2)*(x1-x2)+ (y1-y2)*(y1-y2));
+    a = (x1-x2);
+    b = (y1-y2);
+    distance = sqrt ((a*a)+ (b*b));
 
     printf("the distance between (%.2f,%.2f) and (%.2f,%.2f)  = %.2f\n", x1,y1,x2,y2,distance );
 
