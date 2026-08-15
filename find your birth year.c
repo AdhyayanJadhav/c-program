@@ -8,7 +8,9 @@
     int age;
     int yourbirthyear;
 
+    printf("enter the current year: ");
     scanf("%d" , &currentYear );
+    printf("enter your current age: ");
     scanf("%d", &age );
 
     yourbirthyear = currentYear - age ;
