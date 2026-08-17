@@ -7,8 +7,14 @@ int main()
     printf("enter a number : ");
     scanf("%d",&number);
     if  ((number % 2 ) == 0 )
-        printf("%d is a even number ", number);
+        printf("%d is a EVEN number ", number);
     else
-        printf("%d is a odd number ", number);
+        printf("%d is a ODD number ", number);
+
+    // if ((number % 2 ) != 0 )
+    //    printf("%d is a ODD number ", number );
+    // else
+    //    printf("%d is a EVEN number ", number );
+
     return 0;
 }
