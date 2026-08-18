@@ -10,8 +10,8 @@ int main()
     scanf("%f", &num2);
 
     if (num1>num2)
-       printf("%.2f is maximum number and %.2f is the minimum number ", num1 ,num2 );
-    else printf("%.2f is maximum number and %.2f is the minimum number ", num2 , num1 );
+       printf(" MAXIMUM number: %.2f\nMINIMUM number: %.2f ", num1 ,num2 );
+    else printf(" MAXIMUM number: %.2f\nMINIMUM number: %.2f ", num2 , num1 );
 
     return 0;
 }
