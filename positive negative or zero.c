@@ -7,14 +7,15 @@ int main()
     int num ;
     printf("Enter a number: ");
     scanf("%d", &num);
+
     if (num<0)
-        printf("-1");
-        {
-            if (num>0)
-                printf("1");
-            if (num==0)
-                printf("0");
-        }
+       printf("-1");
+    {
+       if (num>0)
+           printf("1");
+       if (num==0)
+           printf("0");
+    }
 
     return 0;
 }
