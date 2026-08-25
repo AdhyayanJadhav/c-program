@@ -2,61 +2,21 @@
 #include<stdlib.h>
 int main()
 {
-    float x1,y1;
-    int quadrant ;
-    printf("Enter x1: ");
-    scanf("%f",&x1);
-    printf("Enter y1: ");
-    scanf("%f",&y1);
-    if (x1>0 && y1>0)
-        quadrant=1;
-    else if (x1<0 && y1>0)
-        quadrant=2;
-    else if (x1<0 && y1<0)
-        quadrant=3;
-    else if (x1>0 && y1<0)
-        quadrant=4;
-    else if (x1==0 && y1==0)
-        quadrant=0;
-    else if (x1==0 && y1>0)
-        quadrant=5;
-    else if (x1>0 && y1==0)
-        quadrant=6;
-    else if (x1==0 && y1<0)
-        quadrant=7;
-    else if (x1<0 && y1==0)
-        quadrant=8;
+    int x, y;
+    printf("Enter x and y: ");
+    scanf("%d%d", &x, &y);
 
-    switch(quadrant)
-    {
-         case 1:
-            printf("point (%.2f,%.2f) is in quadrant 1 ",x1,y1);
-             break;
-         case 2:
-            printf("point (%.2f,%.2f) is in quadrant 2 ",x1,y1);
-             break;
-         case 3:
-            printf("point (%.2f,%.2f) is in quadrant 3 ",x1,y1);
-            break;
-         case 4:
-            printf("point (%.2f,%.2f) is in quadrant 4 ",x1,y1);
-            break;
-         case 0:
-            printf("point (%.2f,%.2f) is in on origin ",x1,y1);
-             break;
-         case 5:
-            printf("point (%.2f,%.2f) is on y axis",x1,y1);
-             break;
-         case 6:
-            printf("point (%.2f,%.2f) is on x axis ",x1,y1);
-            break;
-         case 7:
-            printf("point (%.2f,%.2f) is on y axis ",x1,y1);
-            break;
-         case 8:
-            printf("point (%.2f,%.2f) is on x axis ",x1,y1);
-            break;
-    }
+    if (x > 0 && y > 0)
+        printf("The point (%d, %d) is located in the First Quadrant\n", x, y);
+    else if (x < 0 && y > 0)
+        printf("The point (%d, %d) is located in the Second Quadrant\n", x, y);
+    else if (x < 0 && y < 0)
+        printf("The point (%d, %d) is located in the Thirds Quadrant\n", x, y);
+    else if (x > 0 && y < 0)
+        printf("The point (%d, %d) is located in the Fourth Quadrant\n", x, y);
+    else
+        printf("The point is located at the center of (0,0)\n");
 
-    return 0;
+	return 0;
 }
+
