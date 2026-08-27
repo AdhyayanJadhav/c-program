@@ -5,31 +5,47 @@ int main()
     int month ;
     printf("enter number of month you want: ");
     scanf("%d",&month);
-    if (month==1)
-        printf("JANUARY");
-    else if (month==2)
-        printf("FEBRUARY");
-    else if (month==3)
-        printf("MARCH");
-    else if (month==4)
-        printf("APRIL");
-    else if (month==5)
-        printf("MAY");
-    else if (month==6)
-        printf("JUNE");
-    else if (month==7)
-        printf("JULY");
-    else if (month==8)
-        printf("AUGUST");
-    else if (month==9)
-        printf("SEPTEMBER");
-    else if (month==10)
-        printf("OCTOBER");
-    else if (month==11)
-        printf("NOVEMBER");
-    else if (month==12)
-        printf("DECEMBER");
-    else if (month<1 || month>12)
+    switch (month)
+    {
+    case 1:
+        printf("January\n");
+        break;
+    case 2:
+        printf("February\n");
+        break;
+    case 3:
+        printf("March\n");
+        break;
+    case 4:
+        printf("April\n");
+        break;
+    case 5:
+        printf("May\n");
+        break;
+    case 6:
+        printf("June\n");
+        break;
+    case 7:
+        printf("July\n");
+        break;
+    case 8:
+        printf("August\n");
+        break;
+    case 9:
+        printf("September\n");
+        break;
+    case 10:
+        printf("October\n");
+        break;
+    case 11:
+        printf("November\n");
+        break;
+    case 12:
+        printf("December\n");
+        break;
+    default:
         printf("ENTER THE NUMBER OF MONTH CORRECTELY");
+    }
+
     return 0;
 }
