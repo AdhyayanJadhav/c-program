@@ -41,13 +41,14 @@ int main()
             year += 1;
         }
     }
+    printf("the next awesome day is ");
     if (day<10)
         printf(" 0");
     printf("%d /",day);
     if (month<10)
         printf(" 0");
     printf("%d /",month);
-    printf("%d is the next Awesome day",year);
+    printf("%d ",year);
 
     return 0;
 }
