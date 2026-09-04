@@ -10,18 +10,18 @@ int main()
      scanf("%d",&year);
 
      printf("YOUR DATE: ");
-    if (day<10)
+     if (day<10)
         printf(" 0");
-    printf("%d /",day);
-    if (month<10)
+        printf("%d /",day);
+     if (month<10)
         printf(" 0");
     printf("%d /",month);
     printf("%d \n",year);
 
     printf("DATE IN HEXADECIMAL:");
-    printf("%x /",day);
-    printf("%x /",month);
-    printf("%x ",year);
+    printf("ox%x /",day);
+    printf("0x%x /",month);
+    printf("0x%x ",year);
 
      return 0;
 }
