@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int  i=0 , pow , num , result=1 ;
+    int  i=0 , pow , num ,   result=1 ;
     printf("Enter a number: ");
     scanf("%d",&num);
     printf("Enter the power(raised to): ");
