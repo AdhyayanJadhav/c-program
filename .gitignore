@@ -3,5 +3,6 @@
 *.obj
 *.depend
 *.layout
+*.pdf
 bin/
 obj/
