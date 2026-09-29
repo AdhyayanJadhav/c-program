@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int  i=0 , pow , num ,   result=1 ;
+    int pow , num , i , result=1 ;
     printf("Enter a number: ");
     scanf("%d",&num);
-    printf("Enter the power(raised to): ");
+    printf("Enter power: ");
     scanf("%d",&pow);
-    while(i<pow)
+    for (i=1;i<=pow;i++)
     {
         result=result*num;
-        i++;
     }
-    printf("%d ^ %d = %d\n",num,pow,result);
+    printf("%d ^ %d = %d \n",num,pow,result);
     return 0;
 }
