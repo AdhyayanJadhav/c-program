@@ -15,8 +15,8 @@ int main()
     num2=num1-num2;
     num1=num1-num2;
 
-    printf("when interchanged num1 will be = %lf \n ", num1 );
-    printf("when interchanged num2 will be = %lf \n  ", num2 );
+    printf("when interchanged num1 will be = %.2lf \n", num1 );
+    printf("when interchanged num2 will be = %.2lf \n  ", num2 );
 
     return 0;
 
